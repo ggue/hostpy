@@ -1,0 +1,17 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      python: 3.7
+  pre_build:
+    commands:
+      - pip3 install django
+  build:
+    commands:
+      - python3 manage.py runserver 0:8000
+artifacts:
+  files:
+    - '**/*'
+  base-directory: hostname-web-$(date +%Y-%m-%d)
+  
