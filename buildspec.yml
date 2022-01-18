@@ -7,8 +7,3 @@ phases:
   pre_build:
     commands:
       - pip3 install django
-artifacts:
-  files:
-    - '**/*'
-  base-directory: hostname-web-$(date +%Y-%m-%d)
-  
