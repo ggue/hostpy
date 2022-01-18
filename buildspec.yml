@@ -7,9 +7,6 @@ phases:
   pre_build:
     commands:
       - pip3 install django
-  build:
-    commands:
-      - python3 manage.py runserver 0:8000
 artifacts:
   files:
     - '**/*'
